@@ -18,15 +18,11 @@ Hệ thống quản lý sách được xây dựng bằng Laravel, hỗ trợ ch
    - Đăng ký, đăng nhập
    - Xem danh sách sách và tác giả
    - Tìm kiếm sách
-   - Đánh giá sách (1-5 sao)
-   - Quản lý thông tin cá nhân
-   - Quên mật khẩu
 
 2. **Admin:**
    - Tất cả chức năng của người dùng thường
    - Quản lý sách (thêm, sửa, xóa)
    - Quản lý tác giả (thêm, sửa, xóa)
-   - Quản lý người dùng
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
