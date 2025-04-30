@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+/* Giữ nguyên các đường dẫn @source vì chúng phụ thuộc vào cấu trúc dự án của bạn */
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+/* Thay đổi cấu hình theme */
+@theme {
+    /* Thay đổi font chữ mặc định */
+    --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-serif: 'Merriweather', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif; /* Thêm font serif */
+
+    /* Mở rộng theme với các giá trị tùy chỉnh */
+    extend: {
+        /* Định nghĩa màu sắc tùy chỉnh */
+        colors: {
+            'primary': {
+                light: '#6ee7b7',  /* Màu xanh lá cây nhạt */
+                DEFAULT: '#10b981', /* Màu xanh lá cây chính */
+                dark: '#047857',   /* Màu xanh lá cây đậm */
+            },
+            'secondary': '#f472b6', /* Màu hồng */
+        },
+        /* Thêm kích thước khoảng cách tùy chỉnh */
+        spacing: {
+            'container-padding': '1.5rem',
+            'section-gap': '4rem',
+        },
+        /* Thêm breakpoint tùy chỉnh */
+        screens: {
+            'laptop-lg': '1440px',
+        },
+        /* Thêm hiệu ứng đổ bóng tùy chỉnh */
+        boxShadow: {
+            'custom-soft': '0 4px 14px 0 rgba(0, 0, 0, 0.05)',
+        }
+    }
+}
